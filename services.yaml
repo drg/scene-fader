@@ -1,0 +1,34 @@
+# Describes the format for available scene_fader services
+
+turn_on:
+  fields:
+    position:
+      required: true
+      example: 0.5
+      default: 0.5
+    scenes:
+      required: true
+      example: |
+        - scene: scene.bedroom_off
+          interval: 0
+        - scene: scene.bedroom_low
+          interval: 0.5
+        - scene: scene:bedroom_high
+          interval: 1
+      default: {}
+      selector:
+        object:
+          scene:
+            required: true
+            example: scene.bedroom_off
+            selector:
+              entity:
+                domain: scene
+          interval:
+            required: true
+            example: 0.5
+            default: 0.5
+            selector:
+              number:
+                min: 0
+                max: 1

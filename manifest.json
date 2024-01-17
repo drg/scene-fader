@@ -1,0 +1,14 @@
+{
+  "domain": "scene_fader",
+  "name": "Scene Fader",
+  "codeowners": ["@drg"],
+  "config_flow": false,
+  "dependencies": [],
+  "documentation": "https://www.home-assistant.io/integrations/scene_fader",
+  "homekit": {},
+  "integration_type": "helper",
+  "iot_class": "calculated",
+  "requirements": [],
+  "ssdp": [],
+  "zeroconf": []
+}
